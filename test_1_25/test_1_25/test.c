@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-//´úÂë1
+//ä»£ç 1
 //#include <stdio.h>
 //
 //void is_prime(int a);
@@ -19,17 +19,17 @@
 //	{
 //		if (a % i == 0)
 //		{
-//			printf("%d²»ÊÇËØÊı\n", a);
+//			printf("%dä¸æ˜¯ç´ æ•°\n", a);
 //			break;
 //		}
 //		else
 //		{
-//			printf("%dÊÇËØÊı\n", a);
+//			printf("%dæ˜¯ç´ æ•°\n", a);
 //			break;
 //		}
 //	}
 //}
-//´úÂë2
+//ä»£ç 2
 //#include <stdio.h>
 //
 //void leap_year(int x);
@@ -46,16 +46,16 @@
 //{
 //	if (x % 4 == 0 && x % 100 != 0)
 //	{
-//		printf("%dÊÇÈòÄê", x);
+//		printf("%dæ˜¯é—°å¹´", x);
 //	}
 //	else if (x % 400 == 0)
 //	{
-//		printf("%dÊÇÈòÄê", x);
+//		printf("%dæ˜¯é—°å¹´", x);
 //	}
 //	else
-//		printf("%d²»ÊÇÈòÄê", x);
+//		printf("%dä¸æ˜¯é—°å¹´", x);
 //}
-
+//ä»£ç 3
 #include <stdio.h>
 
 int bineary_search(int a[], int key, int length);
@@ -69,9 +69,12 @@ int main()
 	int num = bineary_search(arr, x , len);
 	if (num == -1)
 	{
-		printf("ÕÒ²»µ½%d\n", x);
+		printf("æ‰¾ä¸åˆ°%d\n", x);
 	}
-	printf("%dÕÒµ½ÁË\n", x);
+	if (num == 1)
+	{
+		printf("%dæ‰¾åˆ°äº†\n", x);
+	}
 	return 0;
 }
 
@@ -79,14 +82,14 @@ int bineary_search(int a[],int key, int length)
 {
 	int left = 0;
 	int right = length - 1;
-	int mid = (left + right) / 2;
 	while (left<=right)
 	{
+		int mid = (left + right) / 2;
 		if (a[mid] > key)
 		{
 			right = mid - 1;
 		}
-		else if (a[mid < key])
+		else if (a[mid] < key)
 		{
 			left = mid + 1;
 		}
