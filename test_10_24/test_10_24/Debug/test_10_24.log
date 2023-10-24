@@ -1,0 +1,4 @@
+﻿  test.c
+E:\C\test_10_24\test_10_24\test.c(71,9): warning C4086: pragma 参数应为 "1"、"2"、"4"、"8" 或者 "16"
+E:\C\test_10_24\test_10_24\test.c(80,9): warning C4086: pragma 参数应为 "1"、"2"、"4"、"8" 或者 "16"
+  test_10_24.vcxproj -> E:\C\test_10_24\Debug\test_10_24.exe
