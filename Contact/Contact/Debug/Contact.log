@@ -1,0 +1,4 @@
+﻿  Contact.c
+E:\C\Contact\Contact\Contact.c(8,13): warning C4013: “strcmp”未定义；假设外部返回 int
+E:\C\Contact\Contact\Contact.c(19,8): warning C4013: “memset”未定义；假设外部返回 int
+  Contact.vcxproj -> E:\C\Contact\Debug\Contact.exe
